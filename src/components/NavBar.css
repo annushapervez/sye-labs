@@ -1,0 +1,116 @@
+
+
+:root {
+  --cream:      #F2E8D9;
+  --cream1:      #Frgb(241, 235, 225)
+  --sand:       #E0C9AA;
+  --terracotta: #C1714F;
+  --rust:       #9B4E2E;
+  --brown:      #3B1F10;
+}
+
+.navbar {
+
+  padding: 0 40px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    font-family: 'Urbanist', sans-serif;
+  position: relative;
+  margin-top: 10px;
+}
+
+
+.sye-logo {
+    font-family: 'Urbanist', sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 0.10em;
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.sye-logo-dots {
+  display: flex;
+  gap: 3px;
+  margin-top: 2px;
+}
+
+.sye-logo-dots span:first-child {
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: var(--brown);
+  display: block;
+}
+
+.sye-logo-dots span:last-child {
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: var(--terracotta);
+  display: block;
+}
+
+.sye-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sye-link {
+  text-decoration: none;
+  font-size: 17px;
+    font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--cream);
+  position: relative;
+  padding-bottom: 3px;
+  transition: color 0.2s ease;
+}
+
+.sye-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--terracotta);
+  transition: width 0.25s ease;
+  border-radius: 2px;
+}
+
+.sye-link:hover::after,
+.sye-link.active::after {
+  width: 100%;
+}
+
+.sye-link:hover {
+  color: var(--rust);
+}
+
+.sye-divider {
+  width: 1px;
+  height: 20px;
+  background: var(--cream);
+  opacity: 0.45;
+
+}
+
+.social-icon-img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  display: block;
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}
+
+.sye-social-icon:hover .social-icon-img {
+  opacity: 1;
+}
