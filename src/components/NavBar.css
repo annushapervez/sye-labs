@@ -150,11 +150,23 @@ background-color: transparent;
 
 .navbar--dark{
     /* Glass base */
-      -webkit-backdrop-filter: blur(18px);
-
+    -webkit-backdrop-filter: blur(18px);
   backdrop-filter: blur(18px);
   background: rgba(255, 255, 255, 0.06);
 
+  /* THIS removes the harsh edge */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 65%,
+    rgba(0,0,0,0.6) 80%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    black 65%,
+    rgba(0,0,0,0.6) 80%,
+    transparent 100%
+  );
 }
 
 .navbar--dark .sye-logo {
