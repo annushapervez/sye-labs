@@ -4,7 +4,7 @@ import NavBar from './components/NavBar'
 import Hero from "./components/Hero";
 import Intro from "./components/Intro";
 import Offerings from './components/Offerings';
-import Content from './components/content';
+import Content from './components/Content';
 import Ticker from './components/Ticker';
 import Final from './components/Final';
 import Footer from './components/Footer';
