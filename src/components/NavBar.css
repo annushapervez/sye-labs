@@ -148,20 +148,12 @@ background-color: transparent;
   opacity: 1;
 }
 
-.navbar--dark {
-  position: fixed;
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.navbar--dark::before {
-  content: "";
-  position: absolute;
-  inset: 0;
+.navbar--dark{
+    /* Glass base */
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  z-index: -1;
+  background: rgba(255, 255, 255, 0.06);
 }
-
 
 .navbar--dark .sye-logo {
   color: var(--brown);
