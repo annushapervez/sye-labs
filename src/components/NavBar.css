@@ -150,8 +150,9 @@ background-color: transparent;
 
 .navbar--dark{
     /* Glass base */
+      -webkit-backdrop-filter: blur(18px);
+
   backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
   background: rgba(255, 255, 255, 0.06);
 
 }
