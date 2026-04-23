@@ -15,13 +15,12 @@
   width: 100%;
   height: 100px;
   z-index: 1000;
-
   display: flex;
   align-items: center;
-  padding: 0 40px;
-  gap: 700px;
-
-background-color: transparent;
+  justify-content: space-between;
+  padding: 0 56px;
+  background-color: transparent;
+  box-sizing: border-box;
 }
 
 
@@ -80,6 +79,7 @@ background-color: transparent;
 }
 
 .sye-links {
+  font-family: 'Saans', sans-serif;
   display: flex;
   align-items: center;
   gap: 25px;
@@ -90,8 +90,8 @@ background-color: transparent;
 
 .sye-link {
   text-decoration: none;
-  font-size: 16px;
-    font-weight: 500;
+  font-size: 15px;
+    font-weight: 400;
   letter-spacing: 0.04em;
   color: var(--cream);
   position: relative;

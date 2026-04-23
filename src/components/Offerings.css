@@ -1,5 +1,4 @@
 .offerings {
-  font-family: 'Urbanist', sans-serif;
     border-bottom: 1px solid rgba(59, 31, 16, 0.1);
 
 }
@@ -40,13 +39,6 @@ body {
   padding-top: 8px;
 }
 
-.offering-num {
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(59, 31, 16, 0.35);
-}
 
 .offering-title {
   font-family: 'Playfair Display', serif;
@@ -58,6 +50,7 @@ body {
 }
 
 .offering-desc {
+  font-family: 'Saans', sans-serif;
   font-size: 1rem;
   margin-top: 6px;
   font-weight: 300;
@@ -73,8 +66,9 @@ body {
 }
 
 .offering-tag {
-  font-size: 0.7rem;
-  font-weight: 500;
+  font-family: 'Saans', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 400;
   letter-spacing: 0.1em;
   background-color: #f7f3ee;
   text-transform: uppercase;
@@ -85,6 +79,7 @@ body {
 }
 
 .offering-link {
+    font-family: 'Saans', sans-serif;
   margin-top: 20px;
   font-size: 0.82rem;
   font-weight: 500;

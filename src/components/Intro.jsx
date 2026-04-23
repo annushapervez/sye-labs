@@ -4,28 +4,28 @@ import "./Intro.css";
 const cards = [
   {
     num: "01",
-    title: "The Problem",
+    title: "Problem",
     hoverClass: "hover-brown",
     body: <>Tech can feel like a closed door. Whether it's a complex concept, navigating the job market, or simply figuring out where to start, <strong>the right resources aren't always easy to find.</strong></>,
     image: "/knot1.png"
   },
   {
     num: "02",
-    title: "Our Approach",
+    title: "Approach",
     hoverClass: "hover-rust",
     body: <>Clear, digestible content that never overwhelms. We translate enterprise knowledge into <strong>something anyone can follow and build on.</strong></>,
     image: "/knot2.png"
   },
   {
     num: "03",
-    title: "The Goal",
+    title: "Goal",
     hoverClass: "hover-terracotta",
     body: <>We want people to feel confident, informed, and equipped. Access to real industry environments, honest guidance, and the tools to move forward <strong>for everyone trying to get there.</strong></>,
     image: "/knot3.png"
   },
   {
     num: "04",
-    title: "The Vision",
+    title: "Vision",
     hoverClass: "hover-sand",
     body: <>By connecting ideas, people, and opportunities, we're building pathways for the next generation of innovators. Real growth <strong>across the whole community.</strong></>,
     image: "/knot41.png"

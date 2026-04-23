@@ -1,4 +1,5 @@
 .ticker {
+font-family: 'Saans', sans-serif;
   width: 100%;
   overflow: hidden;
   border-top: 1px solid rgba(59, 31, 16, 0.08);
@@ -23,7 +24,7 @@
 }
 
 .ticker-content span {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: rgba(193, 113, 79, 0.7); 

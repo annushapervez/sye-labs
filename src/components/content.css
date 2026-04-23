@@ -120,6 +120,7 @@
 }
 
 .content-tag {
+    font-family: 'Saans', sans-serif;
   display: inline-block;
   font-size: 0.62rem;
   font-weight: 600;
@@ -130,8 +131,8 @@
 }
 
 .content-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 0.95rem;
+  font-family: 'Saans', sans-serif;
+  font-size: 0.85rem;
   font-weight: 400;
   color: #fff;
   line-height: 1.35;
@@ -140,7 +141,9 @@
 }
 
 .featured .content-title {
-  font-size: 1.1rem;
+  font-size: 1rem;
+    font-weight: 400;
+
 }
 
 .content-meta {

@@ -76,12 +76,7 @@
   color: var(--terracotta);
 }
 
-.hero-sub {
-  font-size: 1rem;
-  font-weight: 300;
-  color: rgba(59, 31, 16, 0.5);
-  margin-top: 20px;
-}
+
 
 .hero-static {
   display: block;
@@ -101,22 +96,20 @@
 
 .hero-fixed-btn {
   position: absolute;
-  bottom: 120px;
+  bottom: 90px;
   left: 56px;
   z-index: 10;
 }
 
 .hero-btn {
   position: absolute;
-  bottom: 150px;
+  bottom: 90px;
   left: 56px;
-
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  padding: 15px 22px;
-
+  font-family: 'Saans', sans-serif;
+    letter-spacing: 0.02em;
+  font-size: 15px;
+  padding: 16px 22px;
   color: var(--cream);
-
   background: rgba(255, 255, 255, 0.10);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);

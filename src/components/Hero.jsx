@@ -130,7 +130,7 @@ const idx = Math.min(
           );
         })}
 <button className={`hero-btn ${step === 1 ? "second-btn" : ""}`}>
-  Learn More
+  Learn more
 </button>
       </div>
     </div>
