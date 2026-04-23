@@ -6,7 +6,7 @@ import Intro from "./components/Intro";
 import Offerings from './components/Offerings';
 import Content from './components/content';
 import Ticker from './components/Ticker';
-import Final from './components/FInal';
+import Final from './components/Final';
 import Footer from './components/Footer';
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
