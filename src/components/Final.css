@@ -1,0 +1,77 @@
+.final-zone {
+  height: 200vh;
+  position: relative;
+  background: linear-gradient(
+    to top,
+    var(--deep)        0%,
+    var(--deep-rust)   15%,
+    var(--mid-terra)   25%,   
+    var(--warm-sand)   52%,
+    var(--sand1)       65%,
+    var(--cream)       78%,
+    #f7f3ee          86%,
+    #ffffff      95%
+  );
+}
+
+.final-zone::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-image: url("https://www.transparenttextures.com/patterns/noise.png");
+  opacity: 0.04;
+  mix-blend-mode: overlay;
+}
+
+.final-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 56px;
+  overflow: hidden;
+}
+
+
+
+.final-phrase {
+  position: absolute;
+  left: 56px;
+  right: 56px;
+  top: 22vh;
+}
+
+.final-phrase h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+  .final-sticky { padding: 0 24px; }
+  .final-phrase { left: 24px; right: 24px; }
+}
+
+.dark-text {
+  color: var(--terracotta);
+  transition: color 0.4s ease;
+}
+
+.light-text {
+  color: #f7f3ee ;
+  transition: color 0.4s ease;
+}
+
+.final-phrase h1 span {
+  transition: opacity 0.4s ease;
+}
+
+.line-1 { opacity: 1; }
+.line-2 { opacity: 0.8; }
+.line-3 { opacity: 0.8; }
+.line-4 { opacity: 0.8; }

@@ -1,0 +1,89 @@
+import "./Offerings.css";
+
+const offerings = [
+  {
+    title: "Mentorship",
+    desc: "Guidance from people who've navigated the industry. Get real advice, real connections, and a clearer path forward.",
+    tags: ["Career guidance", "Industry access"],
+    hoverColor: "#f2faff",
+    video: "mentorship.mov",
+    visualBg: "#5a4334",
+  },
+  {
+    title: "Conferences",
+    desc: "Step inside the conference experience. From real conversations to practical advice, see how people actually show up, connect, and make the most of it.",
+    tags: ["Networking", "Talks", "Workshops"],
+    hoverColor: "#fcf7ff",
+    video: "conferences.mp4",
+    visualBg: "var(--rust)",
+  },
+  {
+    title: "Home Labs",
+    desc: "Hands-on learning environments you can build and run from anywhere. Practice real skills without needing enterprise resources.",
+    tags: ["Hands-on", "Self-paced", "Real tools"],
+    hoverColor: "#fbf9eb",
+    video: "homelabs.mp4",
+    visualBg: "#1a1208",
+  },
+];
+
+const Offerings = ({ onHoverColor }) => {
+  const defaultBg = "#F2E8D9"; 
+
+  return (
+    <section className="offerings">
+        <div className="offerings-header">
+    <h2 className="offerings-headline">
+      How we help you grow
+    </h2>
+  </div>
+      {offerings.map((item, i) => (
+<div
+  key={i}
+  className="offering"
+  onMouseEnter={() => {
+    document.body.style.background = item.hoverColor;
+  }}
+  onMouseLeave={() => {
+    document.body.style.background = "#ffffff"; 
+  }}
+>          
+          <div className="offering-left">
+            <h2 className="offering-title">{item.title}</h2>
+            <p className="offering-desc">{item.desc}</p>
+
+            <div className="offering-tags">
+              {item.tags.map((tag, j) => (
+                <span key={j} className="offering-tag">{tag}</span>
+              ))}
+            </div>
+
+            <a href="#" className="offering-link">Learn more →</a>
+          </div>
+
+<div
+  className="offering-right"
+>
+            <video
+              className="offering-img"
+              src={`/${item.video}`}
+              autoPlay
+              loop
+              muted
+              playsInline
+            />
+
+            <div className="offering-glass" />
+
+            <span className="offering-visual-title">
+              {item.title}
+            </span>
+          </div>
+
+        </div>
+      ))}
+    </section>
+  );
+};
+
+export default Offerings;

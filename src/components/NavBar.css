@@ -2,23 +2,48 @@
 
 :root {
   --cream:      #F2E8D9;
-  --cream1:      #Frgb(241, 235, 225)
+  --cream1:      rgb(241, 235, 225);
   --sand:       #E0C9AA;
   --terracotta: #C1714F;
   --rust:       #9B4E2E;
   --brown:      #3B1F10;
 }
-
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1000;
 
-  padding: 0 40px;
-  height: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-    font-family: 'Urbanist', sans-serif;
-  position: relative;
-  margin-top: 10px;
+  padding: 0 40px;
+  gap: 700px;
+
+background-color: transparent;
+}
+
+
+.navbar {
+  transition: opacity 0.3s ease;
+}
+
+.nav-hide .sye-links,
+.nav-hide .socials,
+.nav-hide .sye-logo {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-show .sye-links,
+.nav-show .socials,
+.nav-show .sye-logo {
+  opacity: 1;
+}
+
+.sye-logo, .sye-links, .socials  {
+  transition: opacity 0.3s ease;
 }
 
 
@@ -43,14 +68,14 @@
 .sye-logo-dots span:first-child {
   width: 9px; height: 9px;
   border-radius: 50%;
-  background: var(--brown);
+  background: var(--terracotta);
   display: block;
 }
 
 .sye-logo-dots span:last-child {
   width: 9px; height: 9px;
   border-radius: 50%;
-  background: var(--terracotta);
+  background: var(--sand);
   display: block;
 }
 
@@ -65,7 +90,7 @@
 
 .sye-link {
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
     font-weight: 500;
   letter-spacing: 0.04em;
   color: var(--cream);
@@ -102,15 +127,65 @@
 
 }
 
+.socials{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+}
+
 .social-icon-img {
   width: 25px;
   height: 25px;
   object-fit: contain;
   display: block;
-  opacity: 0.75;
+  opacity: 0.9;
   transition: opacity 0.2s ease;
 }
 
+
 .sye-social-icon:hover .social-icon-img {
   opacity: 1;
+}
+
+.navbar--dark{
+    /* Glass base */
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.06);
+
+  /* THIS removes the harsh edge */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 65%,
+    rgba(0,0,0,0.6) 80%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    black 65%,
+    rgba(0,0,0,0.6) 80%,
+    transparent 100%
+  );
+}
+
+.navbar--dark .sye-logo {
+  color: var(--brown);
+}
+
+.navbar--dark .sye-link {
+  color: var(--brown);
+}
+
+.navbar--dark .sye-link:hover {
+  color: var(--rust);
+}
+
+.navbar--dark .sye-divider {
+  background: var(--brown);
+  opacity: 0.3;
+}
+
+.navbar--dark .social-icon-img {
+  filter: invert(1) sepia(1) saturate(1.5) hue-rotate(330deg) brightness(0.3);
 }

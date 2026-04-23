@@ -1,25 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
   --cream:      #F2E8D9;
-  --white: #F7F1E8 ;
+  --white:      #F7F1E8;
+
   --sand:       #E0C9AA;
-  --sand1:       #E8D4BC;
+  --sand1:      #E8D4BC;
+
   --terracotta: #C1714F;
   --rust:       #98573b;
   --brown:      #3B1F10;
+
+  --deep:       #1a0a04;
+  --deep-rust:  #5C2A14;
+  --mid-terra:  #A85A38;
+
+  --terra-sand:   #B86A46;  
+  --clay-sand:    #CFA07E;  
+  --warm-sand:    #DCC2A8; 
 }
-
-
 body {
-    font-family: 'Urbanist', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    var(--terracotta) 0%, 
-    var(--cream) 15%,    
-    var(--white) 40%,
-    var(--cream) 70%,    
-    var(--sand1) 100%      
-  );
+
+
 }
+
